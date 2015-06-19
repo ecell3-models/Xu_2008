@@ -1,0 +1,1947 @@
+<?xml version="1.0" ?>
+<eml>
+<stepper class="FixedODE1Stepper" id="Default"/>
+<system class="System" id="/">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<variable class="Variable" id="SIZE">
+<property name="Value">
+<value>1.0</value>
+</property>
+</variable>
+<variable class="Variable" id="F">
+<property name="Value">
+<value>96520</value>
+</property>
+</variable>
+<variable class="Variable" id="R">
+<property name="Value">
+<value>8.3134</value>
+</property>
+</variable>
+<variable class="Variable" id="PI">
+<property name="Value">
+<value>3.14</value>
+</property>
+</variable>
+<variable class="Variable" id="celsius">
+<property name="Value">
+<value>30</value>
+</property>
+</variable>
+<variable class="Variable" id="T">
+<property name="Value">
+<value>303.14</value>
+</property>
+</variable>
+<variable class="Variable" id="Rm">
+<property name="Value">
+<value>60000</value>
+</property>
+</variable>
+<variable class="Variable" id="cm">
+<property name="Value">
+<value>0.001</value>
+</property>
+</variable>
+<variable class="Variable" id="Ra">
+<property name="Value">
+<value>0.02</value>
+</property>
+</variable>
+<variable class="Variable" id="vrest">
+<property name="Value">
+<value>-65</value>
+</property>
+</variable>
+<variable class="Variable" id="vinit">
+<property name="Value">
+<value>-65</value>
+</property>
+</variable>
+<variable class="Variable" id="vk">
+<property name="Value">
+<value>-91</value>
+</property>
+</variable>
+<variable class="Variable" id="vna">
+<property name="Value">
+<value>50</value>
+</property>
+</variable>
+<variable class="Variable" id="cai_init">
+<property name="Value">
+<value>5.0e-5</value>
+</property>
+</variable>
+<variable class="Variable" id="cao">
+<property name="Value">
+<value>2</value>
+</property>
+</variable>
+<variable class="Variable" id="v">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="dt">
+<property name="Value">
+<value>1</value>
+</property>
+</variable>
+<variable class="Variable" id="t">
+<property name="Value">
+<value>1</value>
+</property>
+</variable>
+<variable class="Variable" id="gna11">
+<property name="Value">
+<value>2.0</value>
+</property>
+</variable>
+<variable class="Variable" id="gcatbar">
+<property name="Value">
+<value>0.45</value>
+</property>
+</variable>
+<variable class="Variable" id="gcat31">
+<property name="Value">
+<value>0.45</value>
+</property>
+</variable>
+<variable class="Variable" id="gcat32">
+<property name="Value">
+<value>0.45</value>
+</property>
+</variable>
+<variable class="Variable" id="gcat33">
+<property name="Value">
+<value>0.45</value>
+</property>
+</variable>
+<variable class="Variable" id="gcatbar_C4565">
+<property name="Value">
+<value>0.72</value>
+</property>
+</variable>
+<variable class="Variable" id="gcanbar">
+<property name="Value">
+<value>0.0025</value>
+</property>
+</variable>
+<variable class="Variable" id="gcalbar">
+<property name="Value">
+<value>0.0025</value>
+</property>
+</variable>
+<variable class="Variable" id="gkdr">
+<property name="Value">
+<value>0.08</value>
+</property>
+</variable>
+<variable class="Variable" id="gka">
+<property name="Value">
+<value>0.0001</value>
+</property>
+</variable>
+<variable class="Variable" id="gkm">
+<property name="Value">
+<value>0.00002</value>
+</property>
+</variable>
+<variable class="Variable" id="gkc">
+<property name="Value">
+<value>0.00005</value>
+</property>
+</variable>
+<variable class="Variable" id="gkahp">
+<property name="Value">
+<value>0.0000018</value>
+</property>
+</variable>
+<variable class="Variable" id="gpas">
+<property name="Value">
+<value>1.66666666667e-05</value>
+</property>
+</variable>
+<variable class="Variable" id="cai">
+<property name="Value">
+<value>5.0e-5</value>
+</property>
+</variable>
+<variable class="Variable" id="ina">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ina11">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="icat">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="icat_alpha1G">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="icat_alpha1H">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="icat_alpha1I">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="iC4565">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ican">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ical">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ica">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ikdr">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ika">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ikm">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ikc">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ikahp">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ipas">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ion">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="current">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Ist">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MC3">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MC">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MO">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MI">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MIs">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MC2">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="IC3">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="IC2">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_MIs2">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_C3">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_C2">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_C">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_O">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_OP">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_OP">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="Na_O">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="OPs">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="M_IF">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ina11_wt">
+<property name="Value">
+<value>0.0</value>
+</property>
+</variable>
+<variable class="Variable" id="ina11_mt">
+<property name="Value">
+<value>0.0</value>
+</property>
+</variable>
+<variable class="Variable" id="mn">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="hn">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ml">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="nth">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="lth">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ntg">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ltg">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="nti">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="lti">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ntC4565">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="ltC4565">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="nkdr">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="lkdr">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="nka">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="lka">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="mkm">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="okc">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="wkahp">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="seg">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="area">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="diam">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="dx">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="g">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionFluxProcess" id="cai">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>0.1*(-0.15*ica.Value+(-1.0*cai.Value)/5.0)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cai</value>
+<value>:/:cai</value>
+<value>1</value>
+</value>
+<value>
+<value>ica</value>
+<value>:/:ica</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="r3">
+<property name="Value">
+<value>15</value>
+</property>
+</variable>
+<variable class="Variable" id="L3">
+<property name="Value">
+<value>25.5</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="diam">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>2.0*r3.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>diam</value>
+<value>:/:diam</value>
+<value>1</value>
+</value>
+<value>
+<value>r3</value>
+<value>:/:r3</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="dx">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>L3.Value/1.0</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>dx</value>
+<value>:/:dx</value>
+<value>1</value>
+</value>
+<value>
+<value>L3</value>
+<value>:/:L3</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="area">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>PI.Value*diam.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>area</value>
+<value>:/:area</value>
+<value>1</value>
+</value>
+<value>
+<value>PI</value>
+<value>:/:PI</value>
+<value>0</value>
+</value>
+<value>
+<value>diam</value>
+<value>:/:diam</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="g">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>4.0 * Ra.Value*dx.Value/(PI.Value*diam.Value*diam.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>g</value>
+<value>:/:g</value>
+<value>1</value>
+</value>
+<value>
+<value>Ra</value>
+<value>:/:Ra</value>
+<value>0</value>
+</value>
+<value>
+<value>dx</value>
+<value>:/:dx</value>
+<value>0</value>
+</value>
+<value>
+<value>PI</value>
+<value>:/:PI</value>
+<value>0</value>
+</value>
+<value>
+<value>diam</value>
+<value>:/:diam</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="icat">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>icat_alpha1G.Value+icat_alpha1H.Value+icat_alpha1I.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>icat</value>
+<value>:/:icat</value>
+<value>1</value>
+</value>
+<value>
+<value>icat_alpha1G</value>
+<value>:/:icat_alpha1G</value>
+<value>0</value>
+</value>
+<value>
+<value>icat_alpha1H</value>
+<value>:/:icat_alpha1H</value>
+<value>0</value>
+</value>
+<value>
+<value>icat_alpha1I</value>
+<value>:/:icat_alpha1I</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="ica">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>icat.Value + ican.Value + ical.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>ica</value>
+<value>:/:ica</value>
+<value>1</value>
+</value>
+<value>
+<value>icat</value>
+<value>:/:icat</value>
+<value>0</value>
+</value>
+<value>
+<value>ican</value>
+<value>:/:ican</value>
+<value>0</value>
+</value>
+<value>
+<value>ical</value>
+<value>:/:ical</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="ion">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>ina11.Value+icat.Value+ican.Value+ical.Value+ikdr.Value+ika.Value+ikm.Value+ikc.Value+ikahp.Value+ipas.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>ion</value>
+<value>:/:ion</value>
+<value>1</value>
+</value>
+<value>
+<value>ina11</value>
+<value>:/:ina11</value>
+<value>0</value>
+</value>
+<value>
+<value>icat</value>
+<value>:/:icat</value>
+<value>0</value>
+</value>
+<value>
+<value>ican</value>
+<value>:/:ican</value>
+<value>0</value>
+</value>
+<value>
+<value>ical</value>
+<value>:/:ical</value>
+<value>0</value>
+</value>
+<value>
+<value>ikdr</value>
+<value>:/:ikdr</value>
+<value>0</value>
+</value>
+<value>
+<value>ika</value>
+<value>:/:ika</value>
+<value>0</value>
+</value>
+<value>
+<value>ikm</value>
+<value>:/:ikm</value>
+<value>0</value>
+</value>
+<value>
+<value>ikc</value>
+<value>:/:ikc</value>
+<value>0</value>
+</value>
+<value>
+<value>ikahp</value>
+<value>:/:ikahp</value>
+<value>0</value>
+</value>
+<value>
+<value>ipas</value>
+<value>:/:ipas</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="current">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>ion.Value+Ist.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>current</value>
+<value>:/:current</value>
+<value>1</value>
+</value>
+<value>
+<value>ion</value>
+<value>:/:ion</value>
+<value>0</value>
+</value>
+<value>
+<value>Ist</value>
+<value>:/:Ist</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="v">
+<property name="Priority">
+<value>-5</value>
+</property>
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>-1.0*current.Value/cm.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>1</value>
+</value>
+<value>
+<value>current</value>
+<value>:/:current</value>
+<value>0</value>
+</value>
+<value>
+<value>cm</value>
+<value>:/:cm</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1G_n_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_l_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_tau_n">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_tau_l">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_vv">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_gbar">
+<property name="Value">
+<value>0.008</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_vhalfn">
+<property name="Value">
+<value>-49.3</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_vhalfl">
+<property name="Value">
+<value>-74.2</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_kn">
+<property name="Value">
+<value>4.6</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_kl">
+<property name="Value">
+<value>-5.5</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_q10">
+<property name="Value">
+<value>2.3</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_qt">
+<property name="Value">
+<value>1.0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_pcabar">
+<property name="Value">
+<value>0.0001</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1G_z">
+<property name="Value">
+<value>2</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_vv">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(t.Value,dt.Value)*(-65)+geq(t.Value,dt.Value)*cat_human_alpha1G_vv.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_vv</value>
+<value>:/:cat_human_alpha1G_vv</value>
+<value>1</value>
+</value>
+<value>
+<value>t</value>
+<value>:/:t</value>
+<value>0</value>
+</value>
+<value>
+<value>dt</value>
+<value>:/:dt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_n_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1G_vhalfn.Value)/cat_human_alpha1G_kn.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_n_inf</value>
+<value>:/:cat_human_alpha1G_n_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_vhalfn</value>
+<value>:/:cat_human_alpha1G_vhalfn</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_kn</value>
+<value>:/:cat_human_alpha1G_kn</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_l_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1G_vhalfl.Value)/cat_human_alpha1G_kl.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_l_inf</value>
+<value>:/:cat_human_alpha1G_l_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_vhalfl</value>
+<value>:/:cat_human_alpha1G_vhalfl</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_kl</value>
+<value>:/:cat_human_alpha1G_kl</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_tau_n">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-56,v.Value)*( (0.8+0.025*exp(-v.Value/14.5))/cat_human_alpha1G_qt.Value ) + geq(-56,v.Value)*( (1.71*exp((v.Value+120)/38))/cat_human_alpha1G_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_tau_n</value>
+<value>:/:cat_human_alpha1G_tau_n</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_qt</value>
+<value>:/:cat_human_alpha1G_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_tau_l">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-60,v.Value)*( (12.3+0.12*exp(-v.Value/10.8))/cat_human_alpha1G_qt.Value ) + geq(-60,v.Value)*( 137/cat_human_alpha1G_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_tau_l</value>
+<value>:/:cat_human_alpha1G_tau_l</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_qt</value>
+<value>:/:cat_human_alpha1G_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1G_ntg">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1G_n_inf.Value/cat_human_alpha1G_tau_n.Value)/(1/cat_human_alpha1G_tau_n.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>ntg</value>
+<value>:/:ntg</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1G_n_inf</value>
+<value>:/:cat_human_alpha1G_n_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_tau_n</value>
+<value>:/:cat_human_alpha1G_tau_n</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1G_ltg">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1G_l_inf.Value/cat_human_alpha1G_tau_l.Value)/(1/cat_human_alpha1G_tau_l.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>ltg</value>
+<value>:/:ltg</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1G_l_inf</value>
+<value>:/:cat_human_alpha1G_l_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_tau_l</value>
+<value>:/:cat_human_alpha1G_tau_l</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1G_w">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_w">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>v.Value*0.001*cat_human_alpha1G_z.Value*F.Value/(R.Value*(celsius.Value+273.16))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_w</value>
+<value>:/:cat_human_alpha1G_w</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_z</value>
+<value>:/:cat_human_alpha1G_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>R</value>
+<value>:/:R</value>
+<value>0</value>
+</value>
+<value>
+<value>celsius</value>
+<value>:/:celsius</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1G_ghk">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_ghk">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>-0.001*cat_human_alpha1G_z.Value*F.Value*(cao.Value-cai.Value*exp(cat_human_alpha1G_w.Value))*cat_human_alpha1G_w.Value/(exp(cat_human_alpha1G_w.Value)-1)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1G_ghk</value>
+<value>:/:cat_human_alpha1G_ghk</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1G_z</value>
+<value>:/:cat_human_alpha1G_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>cao</value>
+<value>:/:cao</value>
+<value>0</value>
+</value>
+<value>
+<value>cai</value>
+<value>:/:cai</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_w</value>
+<value>:/:cat_human_alpha1G_w</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1G_icat_alpha1G">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>gcat31.Value*cat_human_alpha1G_pcabar.Value*ntg.Value*ntg.Value*ltg.Value*cat_human_alpha1G_ghk.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>icat_alpha1G</value>
+<value>:/:icat_alpha1G</value>
+<value>1</value>
+</value>
+<value>
+<value>gcat31</value>
+<value>:/:gcat31</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_pcabar</value>
+<value>:/:cat_human_alpha1G_pcabar</value>
+<value>0</value>
+</value>
+<value>
+<value>ntg</value>
+<value>:/:ntg</value>
+<value>0</value>
+</value>
+<value>
+<value>ltg</value>
+<value>:/:ltg</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1G_ghk</value>
+<value>:/:cat_human_alpha1G_ghk</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1H_n_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_l_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_tau_n">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_tau_l">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_vv">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_gbar">
+<property name="Value">
+<value>0.008</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_vhalfn">
+<property name="Value">
+<value>-48.4</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_vhalfl">
+<property name="Value">
+<value>-75.6</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_kn">
+<property name="Value">
+<value>5.2</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_kl">
+<property name="Value">
+<value>-6.2</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_q10">
+<property name="Value">
+<value>2.3</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_qt">
+<property name="Value">
+<value>1.0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_pcabar">
+<property name="Value">
+<value>0.0001</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1H_z">
+<property name="Value">
+<value>2</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_vv">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(t.Value,dt.Value)*-65+geq(t.Value,dt.Value)*cat_human_alpha1H_vv.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_vv</value>
+<value>:/:cat_human_alpha1H_vv</value>
+<value>1</value>
+</value>
+<value>
+<value>t</value>
+<value>:/:t</value>
+<value>0</value>
+</value>
+<value>
+<value>dt</value>
+<value>:/:dt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_n_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1H_vhalfn.Value)/cat_human_alpha1H_kn.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_n_inf</value>
+<value>:/:cat_human_alpha1H_n_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_vhalfn</value>
+<value>:/:cat_human_alpha1H_vhalfn</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_kn</value>
+<value>:/:cat_human_alpha1H_kn</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_l_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1H_vhalfl.Value)/cat_human_alpha1H_kl.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_l_inf</value>
+<value>:/:cat_human_alpha1H_l_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_vhalfl</value>
+<value>:/:cat_human_alpha1H_vhalfl</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_kl</value>
+<value>:/:cat_human_alpha1H_kl</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_tau_n">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-56,v.Value)*( (1.34+0.035*exp(-v.Value/11.8))/cat_human_alpha1H_qt.Value ) + geq(-56,v.Value)*( (2.44*exp((v.Value+120)/40))/cat_human_alpha1H_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_tau_n</value>
+<value>:/:cat_human_alpha1H_tau_n</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_qt</value>
+<value>:/:cat_human_alpha1H_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_tau_l">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-60,v.Value)*( (18.3+0.005*exp(-v.Value/6.2))/cat_human_alpha1H_qt.Value ) + geq(-60,v.Value)*( 500/cat_human_alpha1H_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_tau_l</value>
+<value>:/:cat_human_alpha1H_tau_l</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_qt</value>
+<value>:/:cat_human_alpha1H_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1H_nth">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1H_n_inf.Value/cat_human_alpha1H_tau_n.Value)/(1/cat_human_alpha1H_tau_n.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>nth</value>
+<value>:/:nth</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1H_n_inf</value>
+<value>:/:cat_human_alpha1H_n_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_tau_n</value>
+<value>:/:cat_human_alpha1H_tau_n</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1H_lth">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1H_l_inf.Value/cat_human_alpha1H_tau_l.Value)/(1/cat_human_alpha1H_tau_l.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>lth</value>
+<value>:/:lth</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1H_l_inf</value>
+<value>:/:cat_human_alpha1H_l_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_tau_l</value>
+<value>:/:cat_human_alpha1H_tau_l</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1H_w">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_w">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>v.Value*0.001*cat_human_alpha1H_z.Value*F.Value/(R.Value*(celsius.Value+273.16))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_w</value>
+<value>:/:cat_human_alpha1H_w</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_z</value>
+<value>:/:cat_human_alpha1H_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>R</value>
+<value>:/:R</value>
+<value>0</value>
+</value>
+<value>
+<value>celsius</value>
+<value>:/:celsius</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1H_ghk">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_ghk">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>-0.001*cat_human_alpha1H_z.Value*F.Value*(cao.Value-cai.Value*exp(cat_human_alpha1H_w.Value))*cat_human_alpha1H_w.Value/(exp(cat_human_alpha1H_w.Value)-1)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1H_ghk</value>
+<value>:/:cat_human_alpha1H_ghk</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1H_z</value>
+<value>:/:cat_human_alpha1H_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>cao</value>
+<value>:/:cao</value>
+<value>0</value>
+</value>
+<value>
+<value>cai</value>
+<value>:/:cai</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_w</value>
+<value>:/:cat_human_alpha1H_w</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1H_icat_alpha1H">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>gcat32.Value*cat_human_alpha1H_pcabar.Value*nth.Value*nth.Value*lth.Value*cat_human_alpha1H_ghk.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>icat_alpha1H</value>
+<value>:/:icat_alpha1H</value>
+<value>1</value>
+</value>
+<value>
+<value>gcat32</value>
+<value>:/:gcat32</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_pcabar</value>
+<value>:/:cat_human_alpha1H_pcabar</value>
+<value>0</value>
+</value>
+<value>
+<value>nth</value>
+<value>:/:nth</value>
+<value>0</value>
+</value>
+<value>
+<value>lth</value>
+<value>:/:lth</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1H_ghk</value>
+<value>:/:cat_human_alpha1H_ghk</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1I_n_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_l_inf">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_tau_n">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_tau_l">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_vv">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_gbar">
+<property name="Value">
+<value>0.008</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_vhalfn">
+<property name="Value">
+<value>-41.5</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_vhalfl">
+<property name="Value">
+<value>-69.8</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_kn">
+<property name="Value">
+<value>6.2</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_kl">
+<property name="Value">
+<value>-6.1</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_q10">
+<property name="Value">
+<value>2.3</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_qt">
+<property name="Value">
+<value>1.0</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_pcabar">
+<property name="Value">
+<value>0.0001</value>
+</property>
+</variable>
+<variable class="Variable" id="cat_human_alpha1I_z">
+<property name="Value">
+<value>2</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_vv">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(t.Value,dt.Value)*-65+geq(t.Value,dt.Value)*cat_human_alpha1I_vv.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_vv</value>
+<value>:/:cat_human_alpha1I_vv</value>
+<value>1</value>
+</value>
+<value>
+<value>t</value>
+<value>:/:t</value>
+<value>0</value>
+</value>
+<value>
+<value>dt</value>
+<value>:/:dt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_n_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1I_vhalfn.Value)/cat_human_alpha1I_kn.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_n_inf</value>
+<value>:/:cat_human_alpha1I_n_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_vhalfn</value>
+<value>:/:cat_human_alpha1I_vhalfn</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_kn</value>
+<value>:/:cat_human_alpha1I_kn</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_l_inf">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>1/(1+exp(-(v.Value-cat_human_alpha1I_vhalfl.Value)/cat_human_alpha1I_kl.Value))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_l_inf</value>
+<value>:/:cat_human_alpha1I_l_inf</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_vhalfl</value>
+<value>:/:cat_human_alpha1I_vhalfl</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_kl</value>
+<value>:/:cat_human_alpha1I_kl</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_tau_n">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-60,v.Value)*( (7.2+0.02*exp(-v.Value/14.7))/cat_human_alpha1I_qt.Value ) + geq(-60,v.Value)*( (0.875*exp((v.Value+120)/41))/cat_human_alpha1I_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_tau_n</value>
+<value>:/:cat_human_alpha1I_tau_n</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_qt</value>
+<value>:/:cat_human_alpha1I_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_tau_l">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>lt(-60,v.Value)*( (79.5+2.0*exp(-v.Value/9.3))/cat_human_alpha1I_qt.Value ) + geq(-60,v.Value)*( 260/cat_human_alpha1I_qt.Value )</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_tau_l</value>
+<value>:/:cat_human_alpha1I_tau_l</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_qt</value>
+<value>:/:cat_human_alpha1I_qt</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1I_nti">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1I_n_inf.Value/cat_human_alpha1I_tau_n.Value)/(1/cat_human_alpha1I_tau_n.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>nti</value>
+<value>:/:nti</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1I_n_inf</value>
+<value>:/:cat_human_alpha1I_n_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_tau_n</value>
+<value>:/:cat_human_alpha1I_tau_n</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionFluxProcess" id="cat_human_alpha1I_lti">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>(cat_human_alpha1I_l_inf.Value/cat_human_alpha1I_tau_l.Value)/(1/cat_human_alpha1I_tau_l.Value)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>lti</value>
+<value>:/:lti</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1I_l_inf</value>
+<value>:/:cat_human_alpha1I_l_inf</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_tau_l</value>
+<value>:/:cat_human_alpha1I_tau_l</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1I_w">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_w">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>v.Value*0.001*cat_human_alpha1I_z.Value*F.Value/(R.Value*(celsius.Value+273.16))</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_w</value>
+<value>:/:cat_human_alpha1I_w</value>
+<value>1</value>
+</value>
+<value>
+<value>v</value>
+<value>:/:v</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_z</value>
+<value>:/:cat_human_alpha1I_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>R</value>
+<value>:/:R</value>
+<value>0</value>
+</value>
+<value>
+<value>celsius</value>
+<value>:/:celsius</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<variable class="Variable" id="cat_human_alpha1I_ghk">
+<property name="Value">
+<value>0</value>
+</property>
+</variable>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_ghk">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>-0.001*cat_human_alpha1I_z.Value*F.Value*(cao.Value-cai.Value*exp(cat_human_alpha1I_w.Value))*cat_human_alpha1I_w.Value/(exp(cat_human_alpha1I_w.Value)-1)</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>cat_human_alpha1I_ghk</value>
+<value>:/:cat_human_alpha1I_ghk</value>
+<value>1</value>
+</value>
+<value>
+<value>cat_human_alpha1I_z</value>
+<value>:/:cat_human_alpha1I_z</value>
+<value>0</value>
+</value>
+<value>
+<value>F</value>
+<value>:/:F</value>
+<value>0</value>
+</value>
+<value>
+<value>cao</value>
+<value>:/:cao</value>
+<value>0</value>
+</value>
+<value>
+<value>cai</value>
+<value>:/:cai</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_w</value>
+<value>:/:cat_human_alpha1I_w</value>
+<value>0</value>
+</value>
+</property>
+</process>
+<process class="ExpressionAssignmentProcess" id="cat_human_alpha1I_icat_alpha1I">
+<property name="StepperID">
+<value>Default</value>
+</property>
+<property name="Expression">
+<value>gcat33.Value*cat_human_alpha1I_pcabar.Value*nti.Value*nti.Value*lti.Value*cat_human_alpha1I_ghk.Value</value>
+</property>
+<property name="VariableReferenceList">
+<value>
+<value>icat_alpha1I</value>
+<value>:/:icat_alpha1I</value>
+<value>1</value>
+</value>
+<value>
+<value>gcat33</value>
+<value>:/:gcat33</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_pcabar</value>
+<value>:/:cat_human_alpha1I_pcabar</value>
+<value>0</value>
+</value>
+<value>
+<value>nti</value>
+<value>:/:nti</value>
+<value>0</value>
+</value>
+<value>
+<value>lti</value>
+<value>:/:lti</value>
+<value>0</value>
+</value>
+<value>
+<value>cat_human_alpha1I_ghk</value>
+<value>:/:cat_human_alpha1I_ghk</value>
+<value>0</value>
+</value>
+</property>
+</process>
+</system>
+</eml>
